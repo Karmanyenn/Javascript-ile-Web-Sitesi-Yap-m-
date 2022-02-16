@@ -1,0 +1,42 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main{
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+#arrowup{
+    position: fixed;
+    top: 90%;
+    right: 1%;
+    color: black;
+    font-size: 3rem;
+}
+
+#arrowup:hover{
+    animation: arrowbump 0.5s infinite alternate;
+}
+
+@keyframes arrowbump{
+    0%{
+        transform: translateY(20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
